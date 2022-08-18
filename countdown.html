@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="count.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer timer</title>
+    <link href="flipTimer.css" rel="stylesheet">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jquery.flipTimer.js"></script>
+</head>
+<body>
+    <article>
+        <img src="./image/Logo.png" alt="logo">
+          <h1>Special Offer 50% Discount...</h1>
+          <div id="head">
+              <div class="frame">Days</div>            
+              <div class="frame">Hours</div>            
+              <div class="frame">Minutes</div>            
+              <div class="frame">Seconds</div>            
+          </div>
+          <div class="flipTimer">
+            <div class="days"></div>
+            <span class="span">:</span>
+            <div class="hours"></div>
+            <span class="span">:</span>
+            <div class="minutes"></div>
+            <span class="span">:</span>
+            <div class="seconds"></div>
+          </div>    
+    </article>
+<script>
+    $(document).ready(function() {
+$('.flipTimer').flipTimer({ 
+
+// count up or countdown
+direction: 'down', 
+
+// the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+date: 'July 30, 2022 00:00:00', 
+
+// callback works only with direction = "down"
+callback: function() { alert('times up!'); }
+
+});
+});
+</script>
+</body>
+</html>

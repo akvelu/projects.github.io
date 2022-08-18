@@ -1,0 +1,72 @@
+:root{
+    --dark: #374151;
+    --darker:#1f2937;
+    --darkest:#111827;
+    --gray: #5a6481;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--gray);
+    color: #FFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+}
+#example thead{
+    background-color: #543b6b;
+}
+
+#example tfoot{
+    background-color: #543b6b;
+}
+
+button{
+    color: #FFF;
+}
+ 
+#btn-clr{
+    color: #FFF;
+}
+
+ #example_length{
+    color: #FFF;
+ }
+ 
+ #example_filter{
+    color: aqua;
+ }
+
+ #example_filter input{
+    color: #FFF;
+ }
+
+ #example_info{
+    margin-top: 5px;
+    background-color: rgb(9, 170, 157);
+    color: rgb(95, 35, 45);
+}
+
+::after{
+    color: #111827;
+}
+
+::before{
+    color: #111827;
+}
+
+#example_previous{
+    background-color: rgb(9, 170, 157);
+    color: rgb(95, 35, 45);
+}
+ 
+
+ 
+ 
